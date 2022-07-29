@@ -3,3 +3,4 @@ class Movie{
         this.name = name;
     }
 }
+class Avatar extends Movie{}
