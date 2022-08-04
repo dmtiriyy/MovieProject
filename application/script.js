@@ -47,7 +47,7 @@ function showMyDB(private){
 showMyDB(personalMovieDB.privat);
 function rememberMyFilms(){
     for(let i = 0; i<2; i++){
-        const a = prompt('Last movie?', '');
+        const a = prompt('Last movie?', '').trim();
         const b = prompt('Grade ? ', '');
         personalMovieDB.movies[a] = b;
     
@@ -60,7 +60,7 @@ function rememberMyFilms(){
     }
 }
 }
-//rememberMyFilms();
+rememberMyFilms();
 
 function detectPersonalLevel(){
     if (numberOfFilms < 10){
